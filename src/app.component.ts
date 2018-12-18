@@ -6,7 +6,7 @@ import {ExchangeService} from './ExchangeService';
   providers:[ExchangeService],
   template: `<input type="number" [(ngModel)]="baseAmount" [ngClass]="{error:isValid(baseAmount), warning:baseAmount<0}"> 
                     <currency-select [(selected)]='baseCurrency'></currency-select>
-                        = <strong>{{targetAmount}}</strong> 
+                        = <strong>{{targetAmount | number:'1.2-2'}}</strong> 
                     <currency-select [(selected)]='targetCurrency'></currency-select>
                         <p *ngIf="isValid(baseAmount)">Poszę podać wartość do przeliczenia</p>
               `,
