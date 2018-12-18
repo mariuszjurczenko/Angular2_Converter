@@ -1,5 +1,5 @@
 (function() {
- // mapa informuje program ładujący system, gdzie ma szukać 
+ // mapa informuje program ładujący system, gdzie ma szukać
   var map = {
     'app': 'app',
     '@angular': 'node_modules/@angular',
